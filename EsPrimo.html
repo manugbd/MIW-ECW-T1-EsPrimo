@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demostración de WebAssembly vs JavaScript</title>
+    <link rel="stylesheet" href="EsPrimo.css">
+    <script type="module" src="EsPrimo.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Demostración de WebAssembly vs JavaScript</h1>
+        <p>Análisis de rendimiento y funcionalidad calculando números primos con WebAssembly nativo (WAT) frente a
+            JavaScript.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Comprobar número primo</h2>
+            <form id="form-comprobar">
+                <label for="numero">Número:</label>
+                <input id="numero" name="numero" type="number" min="1" max="2147483647" value="104729" required>
+                <button type="submit">Comprobar</button>
+            </form>
+            <p aria-live="polite"></p>
+        </section>
+        <section>
+            <h2>Listar primeros números primos</h2>
+            <form id="form-listar">
+                <p>
+                    <label for="limite">Calcular primos hasta:</label>
+                    <input id="limite" name="limite" type="number" min="2" max="100000" value="100" required>
+                </p>
+                <button type="submit">Generar Lista</button>
+            </form>
+            <output></output>
+        </section>
+        <section>
+            <h2>Comparación de Rendimiento</h2>
+            <p>Se realiza una prueba intensiva calculando todos los números primos hasta el límite fijado, midiendo el
+                tiempo de ejecución de ambos motores.</p>
+            <form id="form-comparar">
+                <label for="limite-comparacion">Límite de búsqueda:</label>
+                <input id="limite-comparacion" name="limite-comparacion" type="number" min="100" max="10000000"
+                    value="1000000" required>
+                <button type="submit">Ejecutar Benchmark</button>
+            </form>
+            <table>
+                <caption>Resultados del Benchmark</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Implementación</th>
+                        <th scope="col">Primos Encontrados</th>
+                        <th scope="col">Tiempo de Ejecución</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p aria-live="polite"></p>
+        </section>
+        <section>
+            <h2>Código Fuente WAT (WebAssembly Text)</h2>
+            <pre></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Demostración de WebAssembly nativo — Rendimiento de cálculo en el navegador.</p>
+        <p>Manuel García Baldó.</p>
+    </footer>
+</body>
+
+</html>

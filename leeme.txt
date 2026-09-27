@@ -1,0 +1,25 @@
+========================================================================
+CARACTERÍSTICAS Y VENTAJAS DE LA APLICACIÓN (WEBASSEMBLY VS JAVASCRIPT)
+========================================================================
+
+1. CARACTERÍSTICAS DE LA APLICACIÓN DESARROLLADA:
+- Permite comprobar si un número individual es primo mediante un algoritmo clásico de división, probando divisores desde 2 hasta la raíz cuadrada del número.
+- Genera la lista de números primos existentes hasta un límite determinado.
+- Incluye un módulo de Benchmark que mide el tiempo de ejecución, en milisegundos, de JavaScript y WebAssembly al realizar el cálculo de números primos.
+- La función 'contarPrimos' realiza el recorrido completo dentro del módulo WebAssembly, evitando realizar una llamada entre JavaScript y WebAssembly por cada número.
+- Carga y muestra el código fuente original en formato de texto WAT directamente en la interfaz.
+- La aplicación utiliza WebAssembly nativo desarrollado mediante WAT, sin utilizar otro lenguaje como paso intermedio.
+
+2. VENTAJAS DE WEBASSEMBLY RESPECTO A JAVASCRIPT:
+- Ejecución eficiente: WebAssembly utiliza un formato binario diseñado para su ejecución eficiente por los navegadores.
+- Tipos numéricos explícitos: WebAssembly trabaja con tipos numéricos definidos, como 'i32', mientras que JavaScript utiliza un sistema de tipos dinámico.
+- Adecuado para cálculos intensivos: WebAssembly está diseñado para ejecutar eficientemente operaciones que requieren una elevada cantidad de cálculos.
+- Menor comunicación entre JavaScript y WebAssembly: La función 'contarPrimos' ejecuta el bucle de cálculo dentro del módulo WebAssembly, evitando numerosas llamadas entre ambos entornos.
+- El rendimiento depende del navegador, hardware, algoritmo utilizado y condiciones de ejecución, por lo que WebAssembly no tiene por qué ser siempre más rápido que JavaScript.
+
+3. CUMPLIMIENTO DE ESTÁNDARES:
+- HTML5: La aplicación utiliza una estructura HTML semántica mediante elementos como 'header', 'main', 'section' y 'footer', además de utilizar correctamente los formularios y sus etiquetas asociadas.
+- Accesibilidad: Los resultados dinámicos utilizan 'aria-live' y los campos de los formularios están asociados con sus correspondientes etiquetas mediante 'label' y 'for'.
+- JavaScript: Se utilizan módulos ES6 mediante 'type="module"', junto con funciones asíncronas para la carga del módulo WebAssembly.
+- CSS: Los estilos se encuentran en un archivo CSS independiente y no se utilizan librerías externas.
+- WebAssembly: El módulo se desarrolla mediante WAT y se utiliza su correspondiente archivo binario WASM para la ejecución en el navegador.

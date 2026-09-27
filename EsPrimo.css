@@ -1,0 +1,137 @@
+body {
+  margin: 2rem;
+  color: #24292f;
+  background: #ffffff;
+  font-family: system-ui, Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+main,
+footer {
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #d0d7de;
+  padding-bottom: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  color: #57606a;
+  border-top: 0.1rem solid #d0d7de;
+  font-size: 0.85rem;
+}
+
+h1,
+h2 {
+  color: #1f2328;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+form {
+  padding: 1.2rem;
+  background: #f6f8fa;
+  border: 0.1rem solid #d0d7de;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+form p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  max-width: 12rem;
+  padding: 0.4rem;
+  border: 0.1rem solid #8c959f;
+  border-radius: 0.3rem;
+  font: inherit;
+}
+
+button {
+  padding: 0.45rem 0.9rem;
+  color: #ffffff;
+  background: #1f2328;
+  border: 0.1rem solid #1f2328;
+  border-radius: 0.3rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #424a53;
+}
+
+button:focus,
+input:focus {
+  outline: 0.15rem solid #0969da;
+  outline-offset: 0.1rem;
+}
+
+main section p[aria-live="polite"] {
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+output {
+  display: block;
+  padding: 1rem;
+  background: #f6f8fa;
+  border: 0.1rem solid #d0d7de;
+  border-radius: 0.4rem;
+  word-break: break-all;
+  max-height: 12rem;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.6rem 0.8rem;
+  border: 0.1rem solid #d0d7de;
+  text-align: left;
+}
+
+th {
+  background: #f6f8fa;
+}
+
+pre {
+  max-height: 30rem;
+  padding: 1rem;
+  overflow: auto;
+  background: #f6f8fa;
+  border: 0.1rem solid #d0d7de;
+  border-radius: 0.4rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
