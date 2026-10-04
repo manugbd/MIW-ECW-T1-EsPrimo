@@ -18,8 +18,8 @@ CARACTERÍSTICAS Y VENTAJAS DE LA APLICACIÓN (WEBASSEMBLY VS JAVASCRIPT)
 - El rendimiento depende del navegador, hardware, algoritmo utilizado y condiciones de ejecución, por lo que WebAssembly no tiene por qué ser siempre más rápido que JavaScript.
 
 3. CUMPLIMIENTO DE ESTÁNDARES:
-- HTML5: La aplicación utiliza una estructura HTML semántica mediante elementos como 'header', 'main', 'section' y 'footer', además de utilizar correctamente los formularios y sus etiquetas asociadas.
+- HTML5: La aplicación utiliza una estructura HTML semántica mediante los elementos correspondientes y pasando todos los validadores del W3C.
 - Accesibilidad: Los resultados dinámicos utilizan 'aria-live' y los campos de los formularios están asociados con sus correspondientes etiquetas mediante 'label' y 'for'.
 - JavaScript: Se utilizan módulos ES6 mediante 'type="module"', junto con funciones asíncronas para la carga del módulo WebAssembly.
-- CSS: Los estilos se encuentran en un archivo CSS independiente y no se utilizan librerías externas.
+- CSS: Los estilos se encuentran en un archivo CSS independiente y no se utilizan librerías externas, cumpliendo con los respectivos validadores.
 - WebAssembly: El módulo se desarrolla mediante WAT y se utiliza su correspondiente archivo binario WASM para la ejecución en el navegador.

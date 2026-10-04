@@ -12,7 +12,7 @@ Aplicación web desarrollada para comprobar números primos y comparar el rendim
 
 ## Estructura del proyecto
 
-- `EsPrimo.html` — Interfaz de la aplicación.
+- `index.html` — Interfaz de la aplicación.
 - `EsPrimo.css` — Estilos de la aplicación.
 - `EsPrimo.js` — Lógica JavaScript e interacción con WebAssembly.
 - `EsPrimo.wat` — Código fuente WebAssembly en formato textual.
@@ -40,7 +40,7 @@ Estas características no implican que WebAssembly sea siempre más rápido que 
 
 La aplicación utiliza HTML5, CSS, JavaScript mediante módulos ES6 y WebAssembly nativo mediante WAT. También utiliza Fetch para cargar el código WAT y `performance.now()` para realizar las mediciones.
 
-La estructura HTML utiliza elementos semánticos como `header`, `main`, `section` y `footer`, además de asociar correctamente los `label` con sus campos de formulario. No se utilizan frameworks ni librerías externas.
+La estructura HTML y CSS cumplen con todos los estándares del W3C.
 
 ## Ejecución
 
